@@ -1,13 +1,3 @@
-terraform {
-  required_version = ">= 1.5.6"
-  required_providers {
-    azurerm = {
-      source  = "hashicorp/azurerm"
-      version = ">= 3.71.0"
-    }
-  }
-}
-
 resource "azurerm_monitor_diagnostic_setting" "diag" {
   name                           = "${var.resource_name}-diag"
   target_resource_id             = var.resource_id

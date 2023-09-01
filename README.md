@@ -34,4 +34,6 @@ No modules.
 
 ## Outputs
 
-No outputs.
+| Name | Description |
+|------|-------------|
+| <a name="output_monitor_diagnostic_setting_id"></a> [monitor\_diagnostic\_setting\_id](#output\_monitor\_diagnostic\_setting\_id) | The ID of the Diagnostic Setting. |
