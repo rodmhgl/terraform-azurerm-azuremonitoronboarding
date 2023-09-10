@@ -11,10 +11,6 @@ resource "azurerm_monitor_diagnostic_setting" "diag" {
     for_each = var.diagnostics_logs_map.log
     content {
       category = enabled_log.value[0]
-      retention_policy {
-        enabled = enabled_log.value[1]
-        days    = enabled_log.value[2]
-      }
     }
   }
 
@@ -22,10 +18,6 @@ resource "azurerm_monitor_diagnostic_setting" "diag" {
     for_each = var.diagnostics_logs_map.metric
     content {
       category = metric.value[0]
-      retention_policy {
-        enabled = metric.value[1]
-        days    = metric.value[2]
-      }
     }
   }
 }
